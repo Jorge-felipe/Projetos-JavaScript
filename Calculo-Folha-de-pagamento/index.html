@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para calculo de Folha de Pagamento</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Young+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h1>SCFP - Sistema de calculo de folha de pagamento</h1>
+        <h3>Calcule o seu salário liquido abaixo:</h2>
+    </nav>
+    <hr>
+    <main class="tabela">
+        <div class="tabela2">
+            <p>Salário Bruto: <input type="number" id="salariobruto" placeholder="0,00"></p>
+            <p>Descontos: <input type="number" id="descontos" placeholder="0,00"></p>
+            <p>Dependentes: <input type="number" id="n_dependentes" placeholder="0"></p>
+        </div>
+        <button id="btn-faz">Calcular</button>
+        <button class="limpeza">Limpar</button>
+
+        
+        <div id="resultado">
+            <div id="resultado2">
+                <p>
+                <table border="01">Resultado:
+                    <tr class="title-table">
+                        <td>Eventos</td>
+                        <td>Aliquota Real</td>
+                        <td>Proventos</td>
+                        <td>Descontos</td>
+                    </tr>
+                    <tr>
+                        <td>Salario Bruto</td>
+                        <td></td>
+                        <td id="l_salarioB"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Outros</td>
+                        <td></td>
+                        <td></td>
+                        <td id="l_descontos"></td>
+                    </tr>
+                    <tr>
+                        <td>Inss</td>
+                        <td id="l_inss_p"></td>
+                        <td></td>
+                        <td id="l_inss_vlr"></td>
+                    </tr>
+                    <tr>
+                        <td>Irrf</td>
+                        <td id="l_irrf_p"></td>
+                        <td></td>
+                        <td id="l_irrf_vlr"></td>
+                    </tr>
+                    <tr>
+                        <td>Totais</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Valor Salário liquido</td>
+                        <td id="l_total_liq"></td>
+                    </tr>
+                </table>
+                </p>
+            </div>
+        </div>
+    </main>
+    <section>
+        <p>
+        <h4>Como utilizar a calculadora de salário líquido:</h4>
+        </p>
+        <hr>
+        <p>
+        <ul>
+            <li> Adicione o valor do seu salário bruto, que está anotado em sua carteira de trabalho;</li>
+            <li>Coloque o valor dos descontos, conforme está no seu holerite (contracheque);</li>
+            <li>Informe o número de dependentes; e
+                Clique em “Calcular”.</li>
+            <li>Pronto, dessa forma, é possível fazer várias simulações para descobrir seu salário líquido
+                gratuitamente.</li>
+        </ul>
+        </p>
+    </section>
+</body>
+
+</html>
